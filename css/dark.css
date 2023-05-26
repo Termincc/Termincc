@@ -15,7 +15,7 @@ body, html {
     width: 100%;
     background-image: linear-gradient(to right, #555, #ccc);
     overflow: auto;
-    position: sticky;
+    position: fixed;
     top: 0px;
 }
 
