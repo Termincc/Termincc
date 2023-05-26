@@ -13,8 +13,10 @@ body, html {
 
 .navbar {
     width: 100%;
-    background-color: #555;
+    background-image: linear-gradient(to right, #555, #ccc);
     overflow: auto;
+    position: sticky;
+    top: 0px;
 }
 
 .navbar a {
@@ -24,14 +26,31 @@ body, html {
     color: white;
     text-decoration: none;
     font-size: 17px;
+    width: 150px;
+}
+
+.navbar p {
+    float: right;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 150px;
+    margin: 0;
+}
+
+.navbar p:hover {
+    background-color: #242424;
+    cursor: pointer;
 }
 
 .navbar a:hover {
-    background-color: #000;
+    background-color: #242424;
 }
 
 .active {
-    background-color: #ccc;
+    background-color: #707070;
 }
 
 @media screen and (max-width: 500px) {
