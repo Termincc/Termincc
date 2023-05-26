@@ -57,6 +57,6 @@ body, html {
     .navbar a, .navbar p {
         float: none;
         display: block;
-        margin: auto, 0;
+        margin: auto;
     }
 }
