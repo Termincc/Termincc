@@ -59,7 +59,7 @@ body, html {
         display: block;
         margin: auto;
         height: 15px;
-        font-size: 10px;
+        font-size: 15px;
     }
     .active {
         background-color: transparent;
