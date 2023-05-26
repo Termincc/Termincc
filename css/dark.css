@@ -58,8 +58,8 @@ body, html {
         float: none;
         display: block;
         margin: auto;
-        height: 15px;
-        font-size: 10px;
+        height: 25px;
+        font-size: 20px;
     }
     .active {
         background-color: transparent;
