@@ -59,4 +59,7 @@ body, html {
         display: block;
         margin: auto;
     }
+    .active {
+        background-color: transparent;
+    }
 }
