@@ -58,4 +58,8 @@ body, html {
         float: none;
         display: block;
     }
+    .navbar p {
+        float: none;
+        display: block;
+    }
 }
