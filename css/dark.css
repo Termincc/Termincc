@@ -165,16 +165,16 @@ body, html {
 
   .bg h1 {
     position: absolute;
-    font-size: 50px;
-    bottom: 100px;
-    left: 50px;
+    font-size: 100px;
+    bottom: 200px;
+    left: 100px;
   }
 
   .bg h2 {
     position: absolute;
-    font-size: 25px;
-    bottom: 100px;
-    left: 50px;
+    font-size: 50px;
+    bottom: 200px;
+    left: 100px;
   }
 
 @media screen and (max-width: 500px) {
