@@ -1,6 +1,10 @@
+@import url(//db.onlinewebfonts.com/c/2970bdb341a4738a457b33d3a426c855?family=Noyh);
+@font-face {font-family: "Noyh"; src: url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.eot"); src: url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.woff") format("woff"), url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.svg#Noyh") format("svg"); }
+
 body, html {
     height: 100%;
     background-color: black;
+    font-family: "Noyh";
 }
 
 .bg {
