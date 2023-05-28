@@ -4,34 +4,27 @@ const name = document.getElementById("user");
 const pass = document.getElementById("pass");
 
 login.addEventListener("click", () => {
-    document.getElementById("loginInput").classList.toggle("hidden")
+    document.getElementById("loginInput").classList.toggle("hidden");
 });
 
 send.addEventListener("click", () => {
     try {
-        let username = user.value
-        let password = pass.value
-        checkCreds(username, password)
+        let username = user.value;
+        let password = pass.value;
+        if (checkCreds(username, password) === true) {
+            location.href = "../admin.html"
+        } else {
+            document.getElementById("error").innerHTML = "Invalid, try again:";
+            document.getElementById("user").value = "";
+            document.getElementById("pass").innerHTML = "";
+        }
     } catch(err) {
-        console.error(err)
-        console.error("Make sure you enter something next time...")
+        console.error(err);
+        console.error("Make sure you enter something next time...");
     }
 });
 
 function checkCreds(user, pass) {
-    fetch(`https://api.netlify.com/api/v1/sites/2407c915-19a6-4f49-84d3-ec271d109626/build_settings`, {
-    headers: {
-        'Authorization': `Bearer otvuIDPYJOrxBjbB9Peuvn5UujIfSbLDxO1YmAE1iP0`,
-    },
-    })
-    .then(response => response.json())
-    .then(data => {
-        // Process the response data
-        const environmentVariables = data.env;
-        console.log(environmentVariables);
-    })
-    .catch(error => {
-        // Handle any errors that occur during the request
-        console.error('Error:', error);
-    });
+    if (user === "Termincc" && pass === "cheeseball") return true;
+    else return false;
 }
