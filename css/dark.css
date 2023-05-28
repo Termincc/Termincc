@@ -159,6 +159,10 @@ body, html {
     animation: btn-anim1 2s linear infinite;
   }
 
+  .login-box p {
+    color: white;
+  }
+
 @media screen and (max-width: 500px) {
     .navbar a, .navbar p {
         float: none;

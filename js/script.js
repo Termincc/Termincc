@@ -16,7 +16,7 @@ send.addEventListener("click", () => {
         } else {
             document.getElementById("error").innerHTML = "Invalid, try again:";
             document.getElementById("user").value = "";
-            document.getElementById("pass").innerHTML = "";
+            document.getElementById("pass").value = "";
         }
     } catch(err) {
         console.error(err);
