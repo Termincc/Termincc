@@ -188,4 +188,18 @@ body, html {
     .active {
         background-color: transparent;
     }
+
+    .bg h1 {
+        position: absolute;
+        font-size: 20px;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .bg h2 {
+        position: absolute;
+        font-size: 10px;
+        bottom: 10px;
+        left: 10px;
+    }
 }
