@@ -164,14 +164,14 @@ body, html {
   }
 
   .bg h1 {
-    position: absolute;
+    position: relative;
     font-size: 100px;
     bottom: 100px;
     left: 100px;
   }
 
   .bg h2 {
-    position: absolute;
+    position: relative;
     font-size: 50px;
     bottom: 100px;
     left: 100px;
