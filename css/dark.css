@@ -191,15 +191,15 @@ body, html {
 
     .bg h1 {
         position: absolute;
-        font-size: 20px;
-        bottom: 10px;
-        left: 10px;
+        font-size: 40px;
+        bottom: 50px;
+        left: 30px;
     }
 
     .bg h2 {
         position: absolute;
-        font-size: 10px;
-        bottom: 10px;
-        left: 10px;
+        font-size: 20px;
+        bottom: 50px;
+        left: 30px;
     }
 }
