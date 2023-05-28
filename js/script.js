@@ -19,7 +19,7 @@ send.addEventListener("click", () => {
 });
 
 function checkCreds(user, pass) {
-    fetch(`https://api.netlify.com/api/v1/sites/2407c915-19a6-4f49-84d3-ec271d109626`, {
+    fetch(`https://api.netlify.com/api/v1/sites/2407c915-19a6-4f49-84d3-ec271d109626/build_settings`, {
     headers: {
         'Authorization': `Bearer otvuIDPYJOrxBjbB9Peuvn5UujIfSbLDxO1YmAE1iP0`,
     },
@@ -27,7 +27,7 @@ function checkCreds(user, pass) {
     .then(response => response.json())
     .then(data => {
         // Process the response data
-        const environmentVariables = data.build_settings.env;
+        const environmentVariables = data.env;
         console.log(environmentVariables);
     })
     .catch(error => {
