@@ -9,8 +9,8 @@ login.addEventListener("click", () => {
 
 send.addEventListener("click", () => {
     try {
-        let username = string(user.value)
-        let password = string(pass.value)
+        let username = user.value
+        let password = pass.value
         checkCreds(username, password)
     } catch(err) {
         console.error(err)
