@@ -218,7 +218,7 @@ body, html {
   
   .second-content {
     height: 0%;
-    width: 90%;
+    width: 100%;
     opacity: 0;
     display: flex;
     justify-content: center;
@@ -232,11 +232,13 @@ body, html {
   .card:hover .second-content {
     opacity: 1;
     height: 100%;
+    width: 90%;
     font-size: 1.8rem;
     transform: rotate(0deg);
     text-align: center;
     align-items: center;
     justify-content: center;
+    
   }
 
   .container {
