@@ -232,7 +232,6 @@ body, html {
   .card:hover .second-content {
     opacity: 1;
     height: 100%;
-    width: 90%;
     font-size: 1.8rem;
     transform: rotate(0deg);
     text-align: center;
