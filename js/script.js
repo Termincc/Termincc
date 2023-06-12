@@ -27,5 +27,6 @@ send.addEventListener("click", () => {
 function checkCreds(user, pass) {
     if (user === "Termincc" && pass === "cheeseball") return true;
     else if (user === "SRUMadDog" && pass === "cheeseball") return true;
+    else if (user === "games" && pass === "atc") location.href = "../games/index.html";
     else return false;
 }
