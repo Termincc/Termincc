@@ -1,0 +1,110 @@
+@import url(//db.onlinewebfonts.com/c/2970bdb341a4738a457b33d3a426c855?family=Noyh);
+@font-face {font-family: "Noyh"; src: url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.eot"); src: url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.woff") format("woff"), url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.svg#Noyh") format("svg"); }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noyh";
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: #e2e9f7;
+}
+
+.side-nav {
+    width: 250px;
+    height: 100%;
+    background: #0d74f5;
+    position: fixed;
+    top: 0;
+    left:0;
+    padding: 20px 30px;
+}
+
+.logo {
+    display: block;
+    margin-bottom: 130px;
+}
+
+#saltruta-img {
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    position: relative;
+}
+
+.nav-links li {
+    padding: 10px 0;
+
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li a i {
+    font-size: 22px;
+    margin-right: 20px;
+    top: 10px;
+}
+
+.active {
+    background: #fff;
+    width: 100%;
+    height: 47px;
+    position: absolute;
+    left: -4%;
+    top: 4%;
+    z-index: -1;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+    display: none;
+    transition: top 0.5s;
+}
+
+.nav-links li:hover a {
+    color: #0d74f5;
+    transition: 0.3s;
+}
+
+.nav-links li:hover ~ .active {
+    display: block;
+}
+
+.nav-links li:nth-child(1):hover ~ .active{
+    top: 4%;
+}
+
+.nav-links li:nth-child(2):hover ~ .active{
+    top: 29%;
+}
+
+.nav-links li:nth-child(3):hover ~ .active{
+    top: 54%;
+}
+
+.nav-links li:nth-child(4):hover ~ .active{
+    top: 79%;
+}
+
+@media only screen and (max-width: 600px) {
+    .side-nav {
+        width: 110px;
+    }
+    .nav-links li a p {
+        display: none;
+    }
+    .nav-links li a p i  {
+        display: block;
+    }
+}
