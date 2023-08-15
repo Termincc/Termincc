@@ -11,7 +11,7 @@
 
 .header {
     width: 100%;
-    height: 100vh;
+    display: inline-block;
     background: #e2e9f7;
 }
 
@@ -97,14 +97,58 @@
     top: 79%;
 }
 
+.intro {
+    width: 75%;
+    position: absolute;
+    left: 300px;
+    top: 20px;
+}
+
+code {
+    background-color: rgb(228, 228, 228);
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    border-radius: 6px;
+    font-family: monospace;
+    white-space:pre-line;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.data {
+    white-space: inherit;
+    word-break: normal;
+    overflow: scroll;
+}
+
 @media only screen and (max-width: 600px) {
+    html {
+        background: #e2e9f7;
+    }
     .side-nav {
-        width: 110px;
+        width: 80px;
+    }
+    .nav-links li {
+        padding: 10px 0;
+        position: relative;
+        right: 10px;
     }
     .nav-links li a p {
         display: none;
     }
     .nav-links li a p i  {
         display: block;
+    }
+    .active {
+        width: 35px;
+    }
+    .intro {
+        left: 120px;
+    }
+    code {
+        width: 75%;
+        text-align: left;
+        padding: 20px;
     }
 }

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saltruta Documentation</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="//db.onlinewebfonts.com/c/2970bdb341a4738a457b33d3a426c855?family=Noyh" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/x-icon" href="./assets/saltruta.png">
+</head>
+<body>
+    <div class="header">
+        <div class="side-nav">
+            <a href="#" class="logo">
+                <img src="./assets/serverArt.png" alt="saltruta logo" id="saltruta-img">
+            </a>
+            <ul class="nav-links">
+                <li>
+                    <a href="./saltruta.html" class="links"><i class="fa-solid fa-house"></i><p>Introduction</p></a>
+                </li>
+                <li>
+                    <a href="#" class="links"><i class="fa-solid fa-database"></i><p>Data Structure</p></a>
+                </li>
+                <li>
+                    <a href="./using.html" class="links"><i class="fa-solid fa-robot"></i><p>Using the bot</p></a>
+                </li>
+                <li>
+                    <a href="./dev.html" class="links"><i class="fa-solid fa-code"></i><p>Dev Tools</p></a>
+                </li>
+                <div class="active">
+                    
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="intro">
+        <h1>Saltruta Data Structure</h1>
+        <pre>
+            <code class="data">
+Data is in JSON format
+
+
+{
+    'cards': {
+        '123': {
+            'name': 'Siesta',
+            'edition': 1,
+            'print': 1,
+            'owner': '609626825991127040',
+            'place': 'bank',
+            'level': 10,
+            'morph': 'ffffff',
+            'trueName': 'Siesta',
+            'tag': 'waifu',
+            'emoji': '❤️',
+            'image': 'ed1',
+            'equipment': {
+                'hat': {
+                    'set': 'colorful',
+                    'rarity': 'epic',
+                },
+                'gloves': {
+                    'set': 'expensive',
+                    'rarity': 'rare',
+                },
+                'hat': {
+                    'set': 'expert',
+                    'rarity': 'uncommon',
+                },
+                'hat': {
+                    'set': 'masterful',
+                    'rarity': 'legendary',
+                },
+            },
+        },
+    },
+    'users': {
+        '609626825991127040': {
+            'collection': {
+                '123': {
+                    'name': 'Siesta',
+                    'edition': 1,
+                    'print': 1,
+                    'owner': '609626825991127040',
+                    'place': 'bank',
+                    'level': 10,
+                    'morph': 'ffffff',
+                    'trueName': 'Siesta',
+                    'tag': 'waifu',
+                    'emoji': '❤️',
+                    'image': 'ed1',
+                    'equipment': {
+                        'hat': {
+                            'set': 'colorful',
+                            'rarity': 'epic',
+                        },
+                        'gloves': {
+                            'set': 'expensive',
+                            'rarity': 'rare',
+                        },
+                        'hat': {
+                            'set': 'expert',
+                            'rarity': 'uncommon',
+                        },
+                        'hat': {
+                            'set': 'masterful',
+                            'rarity': 'legendary',
+                        },
+                    },
+                },
+            },
+            'bank': {
+                '123': {
+                    'name': 'Siesta',
+                    'edition': 1,
+                    'print': 1,
+                    'owner': '609626825991127040',
+                    'place': 'bank',
+                    'level': 10,
+                    'morph': 'ffffff',
+                    'trueName': 'Siesta',
+                    'tag': 'waifu',
+                    'emoji': '❤️',
+                    'image': 'ed1',
+                    'equipment': {
+                        'hat': {
+                            'set': 'colorful',
+                            'rarity': 'epic',
+                        },
+                        'gloves': {
+                            'set': 'expensive',
+                            'rarity': 'rare',
+                        },
+                        'hat': {
+                            'set': 'expert',
+                            'rarity': 'uncommon',
+                        },
+                        'hat': {
+                            'set': 'masterful',
+                            'rarity': 'legendary',
+                        },
+                    },
+                },
+            },
+            'display': {
+                '123': {
+                    'name': 'Siesta',
+                    'edition': 1,
+                    'print': 1,
+                    'owner': '609626825991127040',
+                    'place': 'bank',
+                    'level': 10,
+                    'morph': 'ffffff',
+                    'trueName': 'Siesta',
+                    'tag': 'waifu',
+                    'emoji': '❤️',
+                    'image': 'ed1',
+                    'equipment': {
+                        'hat': {
+                            'set': 'colorful',
+                            'rarity': 'epic',
+                        },
+                        'gloves': {
+                            'set': 'expensive',
+                            'rarity': 'rare',
+                        },
+                        'hat': {
+                            'set': 'expert',
+                            'rarity': 'uncommon',
+                        },
+                        'hat': {
+                            'set': 'masterful',
+                            'rarity': 'legendary',
+                        },
+                    },
+                },
+            },
+            'inventory': {
+                'money': {
+                    'cash': 0,
+                    'coin': 0,
+                    'bag': 0,
+                },
+                'other': {
+                    'cheap belt': {
+                        'set': 'cheap',
+                        'rarity': 'common',
+                    },
+                }
+            },
+            'wishlist': ['siesta', 'zerotwo', 'empty']
+            'tags': {
+                'waifu': {
+                    'emoji': '❤️',
+                    'cards' : ['123'],
+                },
+            },
+            'expedition': {
+                'name': '9-5 Office Job',
+                'time': time.time(),
+                'num': 1,
+                'active': True,
+            },
+        },
+    },
+    'characters': {
+        'Siesta': {
+            'editions': [1,2],
+            'print': [2,4],
+            'imgaes': {
+                'ed1': 'image_url',
+                'ed2': 'image_url',
+                'lvl5': 'image_url',
+            },
+            'aliases': ["The Legendary Detective"],
+        },
+    },
+    'activeCommands': {
+        {messageID} : {
+            'message': {message},
+            'messageContent': {embed},
+            'messageAuthor': '609626825991127040',
+            'messageData': {
+                'data': 'dataValue',
+            },
+            'messageTime': {time.time()},
+            'view': {
+                {itemName}: {item},
+            },
+        }
+    },
+    'servers': {
+        '1029688454352748564': {
+            'messageCount': 99,
+            'dropChannel': 1029688492189564948,
+        },
+    },
+    'errors': [
+        {
+            'user': '609626825991127040',
+            'server': '1029688454352748564',
+            'error': 'embed not found',
+            'command': 'e6',
+        },
+    ],
+}
+
+
+
+<a href="Saltruta Example Data.txt" download>EXAMPLE DATA FILE (REAL DATA FROM 08/15/23)</a>
+            </code>
+        </pre>
+    </div>
+</body>
+</html>

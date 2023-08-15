@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saltruta Documentation</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="//db.onlinewebfonts.com/c/2970bdb341a4738a457b33d3a426c855?family=Noyh" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/x-icon" href="./assets/saltruta.png">
+</head>
+<body>
+    <div class="header">
+        <div class="side-nav">
+            <a href="#" class="logo">
+                <img src="./assets/serverArt.png" alt="saltruta logo" id="saltruta-img">
+            </a>
+            <ul class="nav-links">
+                <li>
+                    <a href="./saltruta.html" class="links"><i class="fa-solid fa-house"></i><p>Introduction</p></a>
+                </li>
+                <li>
+                    <a href="./data structure.html" class="links"><i class="fa-solid fa-database"></i><p>Data Structure</p></a>
+                </li>
+                <li>
+                    <a href="#" class="links"><i class="fa-solid fa-robot"></i><p>Using the bot</p></a>
+                </li>
+                <li>
+                    <a href="./dev.html" class="links"><i class="fa-solid fa-code"></i><p>Dev Tools</p></a>
+                </li>
+                <div class="active">
+                    
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="intro">
+        <h1>Using Saltruta</h1>
+        <pre>
+            <code>
+There is currently no main server for saltruta, although this will change in the future (most likely with v2.0).
+
+The bot does not currently support "/" commands, and there is no plan for this to be implemented in the near future.
+
+The official prefix for saltruta is "w!", however, the "!" can be ommited altogether.
+
+
+
+<h2>Commands:</h2>
+<h3>w!setup</h3>
+Used to add a server to the drop list. This omeans that cards can be drpped in your server.
+The drop channel will be set to the channel you use this command in (it can be changed)
+
+Aliases:
+ - "w!setup"
+
+Responses:
+ 1. Error Found -- Reported to Developer (Failed attempt)
+ 2. Saltruta Setup (Success)
+
+
+<h3>w!view</h3>
+Used to view a card. This can be your own card, or someone else's card.
+
+Aliases:
+ - "w!view"
+ - "wview"
+ - "w!v"
+ - "wv"
+
+Arguments:
+ 1. code (REQUIRED)
+
+Responses:
+ 1. Error Found -- Reported to Developer (Failed attempt)
+ 2. Please enter a valid code (Failed Input)
+ 3. Card View (Success)
+
+Example:
+"w!view 123456"
+This would show the card with the code: "123456"
+
+
+<h3>w!collection</h3>
+Used to view a collection. Can be your own collection, or someone else's collection.
+
+Alliases:
+ - "w!collection"
+ - "wcollection"
+ - "w!co"
+ - "wco"
+
+Arguments:
+ 1. User (OPTIONAL, if none is given, your own is shown)
+ 2. Filters (OPTIONAL, edition (e), character (c), print (p), tag (t), level (l))
+ 3. Order (OPTIONAL, level (l), print (p), edition (e), if none is given, cards will be ordered from newest to oldest)
+
+Responses:
+ 1. Error Found -- Reported to Developer (Failed attempt)
+ 2. Card Collection (Success)
+
+Example:
+"w!collection @termincc e=2 p=1 o=l"
+This would show @termincc's collection, only showing cards that are edition 2 & level 1, ordered from highest level to lowest level.
+
+
+<h3>w!inventory</h3>
+Used to view a players inventory. Can be your own inventory, or someone else's inventory.
+
+Aliases:
+ - "w!inventory"
+ - "winventory"
+ - "w!iv"
+ - "wiv"
+
+Arguments:
+ 1. User (OPTIONAL, if none is given, your own is shown)
+
+Responses:
+ 1. Error Found -- Reported to Developer (Failed attempt)
+ 2. User's Inventory (Success)
+
+Example:
+"w!inventory @termincc"
+This would show @termincc's inventory.
+
+
+<h3>w!bank</h3>
+Used to view a player's bank. Can be your own bank, or someone else's bank.
+
+Aliases:
+ - "w!bank"
+ - "wbank"
+ - "w!ba"
+ - "wba"
+
+Arguments:
+ 1. User (OPTIONAL, if none is given, your own is shown)
+
+Responses:
+ - Error Found -- Reported to Developer (Failed attempt)
+ - User's bank (Success)
+
+Example:
+"w!bank @termincc"
+This would show @termincc's bank.
+
+
+<h3>w!transfer</h3>
+Used to move a card between the three areas (colelction, bank, display).
+Cards can be moved back at any time.
+
+Aliases:
+ - "w!transfer"
+ - "wtransfer"
+ - "w!tr"
+ - "wtr"
+
+Arguments:
+ 1. Card Code (REQUIRED)
+ 2. Destination (OPTIONAL)
+
+Responses:
+ 1. Invalid Input (Input Error)
+ 2. Bank Full (You cannot fit another card in your bank)
+ 3. This card is already in {destination} (You cannot move them to where they already are)
+ 4. Error Found -- Reported to Developer (Failed attempt)
+ 5. Card Transfer (Success)
+
+Example:
+"w!transfer 123456 bank"
+This would move card "123456" from where it was to the bank.
+
+
+<h3>w!display</h3>
+Used to view a display card. You can view your display, or other's display.
+
+Aliases:
+ - "w!display"
+ - "wdisplay"
+ - "w!d"
+ - "wd"
+
+Arguments:
+ 1. User (OPTIONAL, if none is given, your own will be shown)
+
+Responses:
+ 1. Error Found -- Reported to Developer (Failed attempt)
+ 2. Display Card (Success)
+
+Example:
+"w!display @termincc"
+This would show @termincc's display card.
+
+
+<h3>w!burn</h3>
+Used to burn unwanted cards. THIS CANNOT BE UNDONE.
+
+Aliases:
+ - "w!burn"
+ - "wburn"
+ - "w!bu"
+ - "wbu"
+
+Arguments:
+ 1. Card Code (OPTIONAL)
+ 2. Tag (OPTIONAL)
+NOTE: ONE OF THESE TWO MUST BE GIVEN.
+
+Responses:
+ 1. Enter a valid code or valid tag (Input error)
+ 2. Error Found -- Reported to Developer (Failed attempt)
+ 3. Card burn (Success)
+
+Example:
+"w!burn t=burn"
+This would burn all cards with the tag: "burn".
+
+
+<h3>w!shop</h3>
+Not currently in v2.0
+
+
+<h3>w!morph</h3>
+Not currently in v2.0
+
+
+<h3>w!levelup</h3>
+Not currently in v2.0
+
+
+<h3>w!wishlist</h3>
+Not currently in v2.0
+
+
+<h3>w!give</h3>
+Not currently in v2.0
+
+
+<h3>w!cooldown</h3>
+Not currently in v2.0
+
+
+<h3>w!multitrade</h3>
+Not currently in v2.0
+
+
+<h3>w!search</h3>
+Not currently in v2.0
+
+
+<h3>w!selectimage</h3>
+Not currently in v2.0
+
+
+<h3>w!alias</h3>
+Not currently in v2.0
+
+
+<h3>w!tags</h3>
+Not currently in v2.0
+
+
+<h3>w!equipment</h3>
+Not currently in v2.0
+
+
+<h3>w!fetch</h3>
+This is used to get the data used by Saltruta.
+Data can be given in either pretty (pprint), or just plain data.
+
+Aliases:
+ - "w!fetch"
+ - "wfetch"
+ - "w!f"
+ - "wf"
+
+Arguments:
+None
+
+Responses:
+ 1. Data File (Success)
+
+<br><br><br><br><br>
+<h2>Features:</h2>
+<h3>Expeditions</h3>
+Expeditions are the way to earn cash/bags/coins.
+
+Users can send their banks on an expedition to collect different amounts of different currencies.
+
+Only 1 expedition can be performed by a user at a time.
+
+There are currently 5 different expeditions:
+ 1. Bank Hiest (5 cash, takes 12 hours)
+ 2. Treasure Hunt (2 coins, takes 12 hours)
+ 3. 9-5 Office Job (1 bag, takes 8 hours)
+ 4. Dragon Slayer (10 cash, takes 24 hours)
+ 5. Farming Expedition (2 bags, 16 hours)
+
+The amounts and times can be decreased by using boosts (see w!shop)
+Amounts are also increased by the value of a user bank.
+
+To calculate the multiplier of a user:
+1+(0.05*a)+(l/100)
+where a = amount of cards in user's bank
+and l = sum of all the levels in a user's bank
+
+If a user had 5 level 10 cards, then they would have a multiplier of:
+1+(0.05*5)+(50/100)
+=1.75x multiplier
+
+
+<h3>Daily Rewards</h3>
+Not currently in v2.0
+
+
+<h3>Equipment</h3>
+Not currently in v2.0
+
+
+<h3>Card Drops</h3>
+Card Drops are how users gain cards.
+
+Every minute, a check is ran to see if a server is eligible for a drop.
+
+To be eligible for a drop the server must:
+ - Have a registered channel (see w!setup)
+ - Have over 100 messages since the last drop
+
+When a card is dropped, checks are run for things like wishlists.
+
+Once a user has clicked the "grab" button, a three second countdown begins.
+Every user that also clicks within those three seconds is enterd.
+A winner is randomly chosen after the three second timer for who is to get the card.
+            </code>
+        </pre>
+    </div>
+</body>
+</html>
