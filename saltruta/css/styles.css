@@ -126,6 +126,12 @@ code {
     html {
         background: #e2e9f7;
     }
+    .logo {
+        margin-bottom: 10px;
+        width: 50px;
+        position: relative;
+        right: 15px;
+    }
     .side-nav {
         width: 80px;
     }
