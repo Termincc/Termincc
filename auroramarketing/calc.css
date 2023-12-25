@@ -1,18 +1,103 @@
+@import url(//db.onlinewebfonts.com/c/2970bdb341a4738a457b33d3a426c855?family=Noyh);
+@font-face {font-family: "Noyh"; src: url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.eot"); src: url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.woff") format("woff"), url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2970bdb341a4738a457b33d3a426c855.svg#Noyh") format("svg"); }
+
+html {
+    font-family: "Noyh";
+}
+
+
+
+
 .menuBox{
-    
     display: grid;
     justify-content: center;
     align-content: center;
     flex-grow: 1;
-    grid-template-columns: repeat(1, 200px);
+    grid-template-columns: repeat(1, 80%);
     grid-template-rows: repeat(3, 200px);
-    gap: 200px;
+    gap: 50px;
     margin-bottom: 200px;
 }
 
 .menu{
     display: flex;
-    border: 10px solid black;
+    border: 5px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px black;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.title {
+    margin-left: 10%;
+    font-size: 30px;
+    max-width: 418.6px;
+}
+
+.salary {
+    margin-right: 5%;
+    float: right;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px black;
+    font-family: "Noyh";
+}
+
+.inputs {
+    display: block;
     justify-content: center;
     align-items: center;
+    margin-right: 5%;
+}
+
+.inputs .salary {
+    margin-right: 0px;
+}
+
+.dropbtn {
+    background-color: gray;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    font-family: "Noyh";
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    left: 50%;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownContent p {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdownContent p:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
