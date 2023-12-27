@@ -9,14 +9,22 @@ html {
 
 
 .menuBox{
-    display: grid;
+    display: block;
     justify-content: center;
     align-content: center;
     flex-grow: 1;
-    grid-template-columns: repeat(1, 80%);
-    grid-template-rows: repeat(3, 200px);
+    /**grid-template-columns: repeat(1, 80%);
+    grid-template-rows: repeat(3, 200px);**/
     gap: 50px;
     margin-bottom: 200px;
+    width: 100%;
+}
+
+.boxes {
+    margin: auto;
+    width: 80%;
+    height: 200px;
+    margin-top: 50px;
 }
 
 .menu{
@@ -24,7 +32,6 @@ html {
     border: 5px solid black;
     border-radius: 20px;
     box-shadow: 10px 10px black;
-    align-items: center;
     width: 100%;
     justify-content: space-between;
     height: 100%;
@@ -34,6 +41,7 @@ html {
     margin-left: 10%;
     font-size: 30px;
     max-width: 418.6px;
+    margin-top: 50px;
 }
 
 .salary {
@@ -53,8 +61,14 @@ html {
     margin-right: 5%;
 }
 
+.salary {
+    height: 20px;
+    margin-top: 50px;
+}
+
 .inputs .salary {
     margin-right: 0px;
+    margin-top: 50px;
 }
 
 .dropbtn {
@@ -65,6 +79,7 @@ html {
     border: none;
     font-family: "Noyh";
     cursor: pointer;
+    margin-top: 50px;
 }
 
 .dropdown {
@@ -100,4 +115,16 @@ html {
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+
+#box1 {
+    height: 200px
+}
+
+#box2 {
+    height: 200px
+}
+
+#box3 {
+    height: 200px
 }

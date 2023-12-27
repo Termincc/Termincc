@@ -30,7 +30,7 @@ optCasualRate.addEventListener("click", () => {
 
 opt1.addEventListener("input", () => {
     if (opt1.value === "") {
-        reset(1)
+        reset("1")
     }
     else {
         opt1Calc()
@@ -39,9 +39,11 @@ opt1.addEventListener("input", () => {
 
 
 function reset(option) {
-
+    document.getElementById("box"+option).style.height = "200px"
 }
 
 function opt1Calc() {
-    let startVal = parseFloat(opt1.value())
+    let startVal = parseFloat(opt1.value)
+    document.getElementById("box1").style.height = "600px"
+    
 }
