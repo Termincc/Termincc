@@ -6,6 +6,7 @@
     <title>Aurora Calculator</title>
     <link href="calc.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="https://auroramarketing.com.au/wp-content/uploads/2021/12/AUM-Logo-RGB-site-icon-1.png">
+    <script src="calc.js" defer></script>
 </head>
 <body>
     <div class="menuBox">
@@ -16,7 +17,7 @@
                 <div class="title">
                 Calculate Rates From Annual Salary
                 </div>
-                <input type="text" class="salary" placeholder="Input Salary.">
+                <input type="number" class="salary" placeholder="Input Salary." id="opt1">
             </div>
         </div>
 
@@ -27,13 +28,13 @@
                     Calculate Annual Salary from Other Measures
                 </div>
                 <div class="inputs">
-                    <input type="text" class="salary" placeholder="Input Salary.">
+                    <input type="number" class="salary" placeholder="Input Salary.">
                     <div class="dropdown">
-                        <button class="dropbtn">Select Type</button>
+                        <button class="dropbtn" id="opt2SelectType">Select Type</button>
                         <div class="dropdownContent">
-                            <p>Monthly Salary</p>
-                            <p>Hourly Rate</p>
-                            <p>Casual Rate</p>
+                            <p id="opt2opt1">Monthly Salary</p>
+                            <p id="opt2opt2">Hourly Rate</p>
+                            <p id="opt2opt3">Casual Rate</p>
                         </div>
                     </div>
                 </div>
@@ -46,7 +47,7 @@
                 <div class="title">
                     Calculate Time for Living
                 </div>
-                <input type="text" class="salary" placeholder="Input Salary.">    
+                <input type="number" class="salary" placeholder="Input Salary.">    
             </div>
         </div>
 
