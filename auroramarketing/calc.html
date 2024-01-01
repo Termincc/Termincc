@@ -1,58 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurora Calculator</title>
-    <link href="calc.css" rel="stylesheet">
+    <link href="./calc.css" rel="stylesheet">
+    <script src="./calc.js" defer></script>
     <link rel="icon" type="image/x-icon" href="https://auroramarketing.com.au/wp-content/uploads/2021/12/AUM-Logo-RGB-site-icon-1.png">
-    <script src="calc.js" defer></script>
 </head>
+
 <body>
-    <div class="menuBox">
-
-
-        <div class="boxes" id="box1">
-            <div class="menu">
-                <div class="title">
-                Calculate Rates From Annual Salary
-                </div>
-                <input type="number" class="salary" placeholder="Input Salary." id="opt1">
-            </div>
+    <div class="container">
+        <div class="box" id="box1">
+            <div class="title">Calculate Rates From Annual Salary</div>
+            <input type="number" placeholder="Enter amount" id="input1">
         </div>
 
-
-        <div class="boxes" id="box2">
-            <div class="menu">
-                <div class="title">
-                    Calculate Annual Salary from Other Measures
-                </div>
-                <div class="inputs">
-                    <input type="number" class="salary" placeholder="Input Salary.">
-                    <div class="dropdown">
-                        <button class="dropbtn" id="opt2SelectType">Select Type</button>
-                        <div class="dropdownContent">
-                            <p id="opt2opt1">Monthly Salary</p>
-                            <p id="opt2opt2">Hourly Rate</p>
-                            <p id="opt2opt3">Casual Rate</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="box" id="box2">
+            <div class="title">Calculate Annual Salary from Other Measures</div>
+            <input type="number" placeholder="Enter amount" id="input2">
+            <select>
+                <option value="option1">Monthly Salary</option>
+                <option value="option2">Hourly Rate</option>
+                <option value="option3">Casual Rate</option>
+            </select>
         </div>
 
-
-        <div class="boxes" id="box3">
-            <div class="menu">
-                <div class="title">
-                    Calculate Time for Living
-                </div>
-                <input type="number" class="salary" placeholder="Input Salary.">    
-            </div>
+        <div class="box" id="box3">
+            <div class="title">Calculate Time for Living</div>
+            <input type="number" placeholder="Enter amount" id="input3">
         </div>
-
-
-
     </div>
 </body>
+
 </html>
