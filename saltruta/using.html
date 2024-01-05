@@ -218,7 +218,25 @@ This would burn all cards with the tag: "burn".
 
 
 <h3>w!shop</h3>
-Not currently in v2.0
+Used to trade currency and buy drops and boosts.
+
+Aliases:
+ - "w!shop"
+ - "wshop"
+ - "w!sh"
+ - "wsh"
+
+Arguments:
+ 1. Item (OPTIONAL)
+ 2. AMOUNT(OPTIONAL, will default to 1)
+
+Responses:
+ 1. Invalid Item / Amount (Input error)
+ 2. Shop (Success)
+
+Example:
+"w!shop boost 4"
+This would buy 4 boosts
 
 
 <h3>w!morph</h3>
@@ -301,13 +319,13 @@ The amounts and times can be decreased by using boosts (see w!shop)
 Amounts are also increased by the value of a user bank.
 
 To calculate the multiplier of a user:
-1+(0.05*a)+(l/100)
+1 + (0.05 * a) + (l / 100)   ?* 2 (IF BOOST)
 where a = amount of cards in user's bank
 and l = sum of all the levels in a user's bank
 
-If a user had 5 level 10 cards, then they would have a multiplier of:
-1+(0.05*5)+(50/100)
-=1.75x multiplier
+If a user had 5 level 10 cards and a boost active, then they would have a multiplier of:
+1 + (0.0 * 5) + (50 / 100) * 2
+=3.5x multiplier
 
 
 <h3>Daily Rewards</h3>
