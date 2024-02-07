@@ -303,16 +303,47 @@ Example:
 This would add "Zero Two" to my wishlist
 
 
-<h3>w!give</h3>
-Not currently in v2.0
-
-
 <h3>w!cooldown</h3>
-Not currently in v2.0
+Used to check the cooldown of a server's drop.
+
+Aliases:
+ - "w!cooldown"
+ - "wcooldown"
+ - "w!cd"
+ - "wcd"
+
+Arguments:
+ 1. NONE
+
+Responses:
+ 1. Server Inactive (Most likely server hasn't been set up)
+ 2. Server Cooldown (Success)
+
+Example:
+"w!cooldown"
+This would show the cooldown for the server the message is sent in
 
 
 <h3>w!multitrade</h3>
-Not currently in v2.0
+Used to trade cards, and money between players.
+
+Aliases:
+ - "w!multitrade"
+ - "wmultitrade"
+ - "w!mt"
+ - "wmt"
+
+Arguments:
+ 1. User (REQUIRED)
+
+Responses:
+ 1. User Occupied (One or both users are currently in a trade)
+ 2. Multi-trade Failed (User doesn't exist in saltruta)
+ 3. Multi-trade (Success)
+
+Example:
+"w!multitrade @terminc"
+This would send a multi-trade request to "@terminc"
 
 
 <h3>w!search</h3>
@@ -371,12 +402,12 @@ The amounts and times can be decreased by using boosts (see w!shop)
 Amounts are also increased by the value of a user bank.
 
 To calculate the multiplier of a user:
-1 + (0.05 * a) + (l / 100)   ?* 2 (IF BOOST)
+(1 + (0.05 * a) + (l / 100))   ?* 2 (IF BOOST)
 where a = amount of cards in user's bank
 and l = sum of all the levels in a user's bank
 
 If a user had 5 level 10 cards and a boost active, then they would have a multiplier of:
-1 + (0.0 * 5) + (50 / 100) * 2
+(1 + (0.0 * 5) + (50 / 100)) * 2
 =3.5x multiplier
 
 
